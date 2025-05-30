@@ -1,0 +1,61 @@
+ay Tracing in One Weekend - .gitignore
+# ==========================================
+
+# --- Output Images ---
+# The book outputs images in the .ppm format. 
+# Keep your repository clean by ignoring the rendered images.
+*.ppm
+*.png
+*.jpg
+*.bmp
+
+# --- Build & Execution Artifacts ---
+# Compiled binaries, object files, and libraries
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.lib
+*.so
+*.dylib
+
+# --- CMake Build Directories ---
+# If you use CMake to configure the project, ignore the build folder
+/build/
+/.cmake/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# --- IDEs and Text Editors ---
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Visual Studio (Windows)
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# Xcode (macOS)
+*.xcodeproj/
+*.xcworkspace/
+.DS_Store
+
+# --- Miscellaneous ---
+# Log files or crash dumps
+*.log
+*.pbm
+*.pgm
